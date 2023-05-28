@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/UserHome"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/CreateNewPoll"
+            android:icon="@drawable/create_new_poll"
+            android:title="Create New Poll" />
+        <item
+            android:id="@+id/MyPolls"
+            android:icon="@drawable/question_mark"
+            android:title="My Polls" />
+        <item
+            android:id="@+id/AnsweredPolls"
+            android:icon="@drawable/answered_polls"
+            android:title="Answered Polls" />
+<!--        <item-->
+<!--            android:id="@+id/Exit"-->
+<!--            android:icon="@drawable/ic_menu_slideshow"-->
+<!--            android:title="Exit" />-->
+    </group>
+</menu>

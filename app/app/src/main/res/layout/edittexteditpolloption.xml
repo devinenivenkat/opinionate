@@ -1,0 +1,11 @@
+<EditText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="#000000"
+    android:backgroundTint="@color/EditText"
+    android:padding="8dp"
+    android:textSize="24dp"
+    android:textColor="@color/T1"
+    android:hint="Option"/>

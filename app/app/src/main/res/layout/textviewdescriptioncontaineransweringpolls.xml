@@ -1,0 +1,16 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:padding="8dp"
+    android:textSize="24dp"
+    android:ems="10"
+    android:elevation="5dp"
+    android:background="@color/lighterThanWave"
+    android:textColor="@color/black"
+    android:fontFamily="@font/alegreya"
+    android:gravity="start|top"
+    android:text="Description"
+    android:inputType="textMultiLine"
+    android:minHeight="96dp" />

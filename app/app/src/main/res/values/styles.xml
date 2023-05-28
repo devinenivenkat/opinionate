@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:background">@null</item>
+        <item name="background">@null</item>
+    </style>
+    <style name="OptionEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#000</item>
+        <item name="android:backgroundTint">@color/EditText</item>
+<!--        <item name="android:layout_marginTop">16dp</item>-->
+        <item name="android:hint">Enter Option</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+    <style name="materialEditTextBoxStyle">Widget.MaterialComponents.TextInputLayout.OutlinedBox</style>
+
+</resources>

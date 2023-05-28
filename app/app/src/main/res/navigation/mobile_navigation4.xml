@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation4"
+    app:startDestination="@id/UserHome">
+
+    <fragment
+        android:id="@+id/UserHome"
+        android:name="com.example.letmeknow.ui.Home.HomeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/CreateNewPoll"
+        android:name="com.example.letmeknow.ui.CreateNewPoll.CreateNewPollFragment"
+        android:label=""
+        tools:layout="@layout/fragment_createnewpoll" >
+        <action
+            android:id="@+id/action_CreateNewPoll_to_UserHome"
+            app:destination="@id/UserHome" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MyPolls"
+        android:name="com.example.letmeknow.ui.MyPolls.MyPollsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_mypolls" >
+        <action
+            android:id="@+id/action_MyPolls_to_UserHome"
+            app:destination="@id/UserHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/AnsweredPolls"
+        android:name="com.example.letmeknow.ui.AnsweredPolls.AnsweredPollsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_answeredpolls" >
+        <action
+            android:id="@+id/action_AnsweredPolls_to_UserHome"
+            app:destination="@id/UserHome" />
+    </fragment>
+</navigation>

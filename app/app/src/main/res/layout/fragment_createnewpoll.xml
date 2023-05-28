@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp">
+<TextView
+    android:id="@+id/newPollTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:fontFamily="@font/alegreya"
+    android:text="New Poll"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:textSize="40dp" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.CreateNewPoll.CreateNewPollFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alegreya"
+            android:text="Question"
+            android:textColor="@color/black"
+            android:textSize="32dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/DescriptionContainer"
+            android:showDividers="middle"
+            android:divider="@drawable/empty_tall_divider">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/QuestionTitleLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Question">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/QuestionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:fontFamily="@font/alegreya"
+                android:textSize="20dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/questionDescription1Layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/questionDescription1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:hint="Description"
+                    android:fontFamily="@font/alegreya"
+                    android:inputType="textMultiLine"
+                    android:minHeight="96dp"
+                    android:gravity="start|top"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/QuestionTitle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:background="#000000"-->
+<!--                android:backgroundTint="#023E8A"-->
+<!--                android:hint="Enter Question"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="24dp" />-->
+
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/questionDescription1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:textColor="@color/T1"-->
+<!--                android:background="#000000"-->
+<!--                android:backgroundTint="@color/EditText"-->
+<!--                android:padding="8dp"-->
+<!--                android:textSize="24dp"-->
+<!--                android:ems="10"-->
+<!--                android:gravity="start|top"-->
+<!--                android:hint="Enter Question Description"-->
+<!--                android:inputType="textMultiLine"-->
+<!--                android:minHeight="96dp"/>-->
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/addImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:backgroundTint="@color/black"
+            android:text="ADD IMAGE (Optional)"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/addDescriptionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:backgroundTint="@color/black"
+            android:text="ADD DESCRIPTION (Optional)"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="24dp"-->
+<!--            android:text="Options"-->
+<!--            android:textColor="@color/T1"-->
+<!--            android:textSize="32dp"/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alegreya"
+            android:text="Options"
+            android:textColor="@color/black"
+            android:textSize="32dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="32dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:divider="@drawable/empty_tall_divider"
+            android:id="@+id/OptionContainer">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/option1Layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Option">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/option1"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/alegreya"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="20dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/option2Layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Option">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alegreya"
+                    android:textColor="#000"
+                    android:textSize="20dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <EditText-->
+<!--                android:id="@+id/option1"-->
+<!--                style="@style/OptionEditText" />-->
+<!--            <EditText-->
+<!--                android:id="@+id/option2"-->
+<!--                style="@style/OptionEditText"/>-->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/AddOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:backgroundTint="@color/black"
+            android:text="Add Option"
+            android:textColor="@color/white"/>
+
+<!--        <Button-->
+<!--            android:id="@+id/AddOption"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:text="Add Option" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alegreya"
+            android:text="Deadline Time"
+            android:textColor="@color/black"
+            android:textSize="32dp" />
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="24dp"-->
+<!--            android:text="Deadline Time"-->
+<!--            android:textColor="@color/T1"-->
+<!--            android:textSize="32dp"/>-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/timerLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Enter time e.g. 03d08h30m">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <EditText-->
+<!--            android:id="@+id/timer"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/T1"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:background="#000000"-->
+<!--            android:backgroundTint="#023E8A"-->
+<!--            android:hint="Enter time e.g. 03d08h30m"-->
+<!--            android:padding="8dp"-->
+<!--            android:textSize="24dp"/>-->
+
+        <Button
+            android:id="@+id/newPollSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/black"
+            android:padding="8dp"
+            android:text="Submit"
+            android:textColor="@color/white"
+            app:cornerRadius="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

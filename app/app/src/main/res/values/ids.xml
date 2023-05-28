@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="questionDescription2" type="id"/>
+    <item name="questionDescription3" type="id"/>
+    <item name="questionDescription4" type="id"/>
+    <item name="questionDescription5" type="id"/>
+    <item name="questionDescription6" type="id"/>
+    <item name="questionDescription7" type="id"/>
+    <item name="questionDescription8" type="id"/>
+    <item name="questionDescription9" type="id"/>
+    <item name="questionDescription10" type="id"/>
+
+    <item name="image1" type="id"/>
+    <item name="image2" type="id"/>
+    <item name="image3" type="id"/>
+    <item name="image4" type="id"/>
+    <item name="image5" type="id"/>
+    <item name="image6" type="id"/>
+    <item name="image7" type="id"/>
+    <item name="image8" type="id"/>
+    <item name="image9" type="id"/>
+    <item name="image10" type="id"/>
+
+    <item name="option3" type="id"/>
+    <item name="option4" type="id"/>
+    <item name="option5" type="id"/>
+    <item name="option6" type="id"/>
+    <item name="option7" type="id"/>
+    <item name="option8" type="id"/>
+    <item name="option9" type="id"/>
+    <item name="option10" type="id"/>
+</resources>

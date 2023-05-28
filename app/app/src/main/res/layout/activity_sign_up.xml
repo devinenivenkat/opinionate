@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wave"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SignUp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:padding="8dp"
+        android:text="Welcome!\nCreate an Account"
+        android:textAlignment="textEnd"
+        android:textSize="35sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signupemaillayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/mail"
+                app:endIconMode="clear_text"
+                android:layout_marginTop="100dp"
+                android:hint="e-mail"
+                app:helperTextTextColor="#a4161a"
+                android:padding="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signupemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:fontFamily="@font/alegreya"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:scrollHorizontally="true"
+                    android:inputType="textEmailAddress"
+                    android:textSize="20dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signuppasslayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/lock"
+                android:hint="password"
+                app:helperTextTextColor="#a4161a"
+                app:counterEnabled="true"
+                app:counterMaxLength="16"
+                android:padding="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signuppass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/alegreya"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:scrollHorizontally="true"
+                    android:textSize="20dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/signupsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                app:cornerRadius="8dp"
+                android:backgroundTint="#000"
+                android:textColor="#fff"
+                android:fontFamily="@font/alegreya"
+                android:padding="8dp"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/loginredirect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already a user? Login"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:fontFamily="@font/alegreya"
+                android:textSize="16dp"
+                android:background="#00000000"
+                android:layout_gravity="center"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+</LinearLayout>

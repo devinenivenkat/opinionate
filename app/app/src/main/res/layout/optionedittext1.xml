@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.textfield.TextInputEditText
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:id="@+id/option1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#000"
+    android:fontFamily="@font/alegreya"
+    android:hint="Option"
+    android:textSize="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
